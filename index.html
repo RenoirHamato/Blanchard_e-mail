@@ -1,0 +1,778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Blanchard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      /* Сброс стилей (lite) */
+      body {
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+      }
+
+      [style*="Arial"] {
+        font-family: "Arial", Tahoma, sans-serif !important;
+      }
+
+      img {
+        outline: none;
+        text-decoration: none;
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100% !important;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
+      table td {
+        border-collapse: collapse;
+      }
+
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      /* Контейнеры и отступы основных блоков */
+      .table-background {
+        width: 100%;
+      }
+
+      .table-adaptive {
+        width: 600px;
+      }
+
+      .table-not-all {
+        display: block;
+        padding-bottom: 31px;
+      }
+
+      .container {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+
+      .pt-20 {
+        padding-top: 20px;
+      }
+
+      .pt-26 {
+        padding-top: 26px;
+      }
+
+      .pt-29 {
+        padding-top: 29px;
+      }
+
+      .pt-30 {
+        padding-top: 30px;
+      }
+
+      .pt-32 {
+        padding-top: 32px;
+      }
+
+      .pb-11 {
+        padding-bottom: 11px;
+      }
+
+      .pb-21 {
+        padding-bottom: 21px;
+      }
+
+      .pb-26 {
+        padding-bottom: 26px;
+      }
+
+      .pb-28 {
+        padding-bottom: 28px;
+      }
+
+      .pb-32 {
+        padding-bottom: 32px;
+      }
+
+      .pb-37 {
+        padding-bottom: 37px;
+      }
+
+      .logo {
+        padding-top: 29px;
+        padding-bottom: 29px;
+      }
+
+      .preview-image {
+        display: block;
+      }
+
+      .preview-image-mobile {
+        display: none;
+      }
+
+      .preview-text {
+        padding-top: 32px;
+        padding-bottom: 37px;
+      }
+
+      .artists-box {
+        padding-top: 20px;
+        padding-bottom: 26px;
+      }
+
+      .artists-item {
+        padding-bottom: 21px;
+      }
+
+      .artists-picture {
+        display: block;
+        padding-bottom: 21px;
+      }
+
+      .artists-picture-mobile {
+        display: none;
+      }
+
+      .not-all {
+        padding-top: 29px;
+        padding-bottom: 32px;
+      }
+
+      .not-all-image {
+        padding-bottom: 11px;
+      }
+
+      .not-all-comment {
+        padding-right: 27px;
+      }
+
+      .not-all-comment1 {
+        width: 140px;
+      }
+
+      .not-all-comment2 {
+        width: 157px;
+      }
+
+      .not-all-comment3 {
+        width: 138px;
+        padding-right: 31px;
+      }
+
+      .social-item {
+        padding-right: 19px;
+      }
+
+      .social-copyright {
+        padding-top: 27.5px;
+        padding-bottom: 10px;
+      }
+
+      /* Заголовки */
+      .title {
+        margin: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .heading {
+        margin: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .subject {
+        margin: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 24px;
+      }
+
+      /* Текст */
+      .description {
+        margin: 0;
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      .description-preview {
+        font-size: 12px;
+        line-height: 24px;
+      }
+
+      .description-artists {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      .description-comments {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      .description-copyright {
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      .description-mailing {
+        font-size: 10px;
+        line-height: 21px;
+      }
+
+      /* Ссылки */
+      .button-link {
+        margin: 0;
+        display: block;
+        padding-top: 13px;
+        padding-bottom: 12px;
+        width: 240px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration: none;
+      }
+
+      /* Декорации */
+      .button {
+        background-color: #9d5cd0;
+        border-radius: 48px;
+      }
+
+      .light {
+        color: #ffffff;
+      }
+
+      .gray {
+        color: #515151;
+      }
+
+      .light-gray {
+        color: #757575;
+      }
+
+      .pink {
+        color: #9d5cd0;
+      }
+
+      @media (max-width: 599px) {
+        .table-adaptive {
+          width: 280px !important;
+        }
+
+        .table-not-all {
+          padding-bottom: 47px !important;
+        }
+
+        .container {
+          padding-right: 18px !important;
+          padding-left: 18px !important;
+        }
+
+        .logo {
+          padding-top: 17.24px !important;
+          padding-bottom: 17.24px !important;
+        }
+
+        .logo-image {
+          width: 114px !important;
+        }
+
+        .preview-image {
+          display: none !important;
+        }
+
+        .preview-image-mobile {
+          display: block !important;
+        }
+
+        .preview-text {
+          padding-bottom: 32px !important;
+        }
+
+        .artists-picture {
+          display: none !important;
+        }
+
+        .artists-picture-mobile {
+          display: block !important;
+          padding-bottom: 10px !important;
+        }
+
+        .not-all {
+          padding-bottom: 31px !important;
+        }
+
+        .not-all-comment {
+          padding-right: 0 !important;
+          padding-bottom: 24px !important;
+        }
+
+        .not-all-comment1 {
+          display: block !important;
+          width: 100% !important;
+        }
+
+        .not-all-comment2 {
+          display: block !important;
+          width: 100% !important;
+        }
+
+        .not-all-comment3 {
+          display: block !important;
+          width: 100% !important;
+          padding-right: 0 !important;
+        }
+
+        .subject {
+          padding-bottom: 2px !important;
+        }
+
+        .subject-mobile {
+          padding-bottom: 10px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0">
+    <div
+      style="
+        font-size: 0px;
+        font-color: #ffffff;
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        display: none;
+      "
+    >
+      Тестовое письмо
+    </div>
+    <table class="table-background" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" bgcolor="#ededed">
+          <table class="table-adaptive" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="logo" align="center" bgcolor="#000000">
+                <img
+                  class="logo-image"
+                  src="https://comicbook-collection.ru/resources/html-emails-homework/logo.png"
+                  alt="Логотип"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="preview-image">
+                <img
+                  src="https://comicbook-collection.ru/resources/html-emails-homework/preview.jpg"
+                  alt="Превью"
+                />
+              </td>
+              <td class="preview-image-mobile">
+                <img
+                  src="https://comicbook-collection.ru/resources/html-emails-homework/preview-mobile.jpg"
+                  alt="Превью"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="container" bgcolor="#ffffff">
+                <table cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="preview-text">
+                      <h1
+                        class="title gray"
+                        style="
+                          font-family: Arial, Geneva, Tahoma, sans-serif;
+                          padding-bottom: 13px;
+                        "
+                      >
+                        Торжество импрессионизма
+                      </h1>
+                      <p
+                        class="description description-preview gray"
+                        style="
+                          font-family: Arial, Geneva, Tahoma, sans-serif;
+                          padding-bottom: 11px;
+                        "
+                      >
+                        Опыт говорит нам, что семантический разбор внешних
+                        противодействий требует анализа новых принципов
+                        формирования материально-технической и&nbsp;кадровой
+                        базы.
+                      </p>
+                      <p
+                        class="description description-preview gray"
+                        style="font-family: Arial, Geneva, Tahoma, sans-serif"
+                      >
+                        Задача организации, в&nbsp;особенности&nbsp;же внедрение
+                        современных методик, в&nbsp;своём классическом
+                        представлении, допускает внедрение глубокомысленных
+                        рассуждений. Есть над чем задуматься: элементы
+                        политического процесса преданы
+                        <nobr>социально-демократической</nobr> анафеме! Но
+                        интерактивные прототипы заблокированы в&nbsp;рамках
+                        своих собственных рациональных ограничений. Сторонники
+                        тоталитаризма в&nbsp;науке ограничены исключительно
+                        образом мышления.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="container" bgcolor="#000000">
+                <table cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="artists-box">
+                      <h2
+                        class="heading light"
+                        style="
+                          font-family: Arial, Geneva, Tahoma, sans-serif;
+                          padding-bottom: 20px;
+                        "
+                      >
+                        Представленные художники
+                      </h2>
+                      <table cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="artists-item">
+                            <img
+                              class="artists-picture"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture1.jpg"
+                              alt="Картина 1"
+                            />
+                            <img
+                              class="artists-picture-mobile"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture1-mobile.jpg"
+                              alt="Картина 1"
+                            />
+                            <h3
+                              class="subject light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Поль Гоген
+                            </h3>
+                            <p
+                              class="description description-artists light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Прежде всего, разбавленное изрядной долей эмпатии,
+                              рациональное мышление в&nbsp;значительной степени
+                              обусловливает важность укрепления моральных
+                              ценностей.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="artists-item">
+                            <img
+                              class="artists-picture"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture2.jpg"
+                              alt="Картина 2"
+                            />
+                            <img
+                              class="artists-picture-mobile"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture2-mobile.jpg"
+                              alt="Картина 2"
+                            />
+                            <h3
+                              class="subject light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Огюст Ренуар
+                            </h3>
+                            <p
+                              class="description description-artists light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              А&nbsp;также сделанные на&nbsp;базе
+                              <nobr>интернет-аналитики</nobr> выводы освещают
+                              чрезвычайно интересные особенности картины
+                              в&nbsp;целом.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="artists-item">
+                            <img
+                              class="artists-picture"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture3.jpg"
+                              alt="Картина 3"
+                            />
+                            <img
+                              class="artists-picture-mobile"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture3-mobile.jpg"
+                              alt="Картина 3"
+                            />
+                            <h3
+                              class="subject light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Клод Моне
+                            </h3>
+                            <p
+                              class="description description-artists light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Современная методология разработки однозначно
+                              фиксирует необходимость системы массового участия.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="artists-item">
+                            <img
+                              class="artists-picture"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture4.jpg"
+                              alt="Картина 4"
+                            />
+                            <img
+                              class="artists-picture-mobile"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture4-mobile.jpg"
+                              alt="Картина 4"
+                            />
+                            <h3
+                              class="subject subject-mobile light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Эдуард Мане
+                            </h3>
+                            <p
+                              class="description description-artists light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Но&nbsp;<nobr>социально-экономическое</nobr>
+                              развитие является качественно новой ступенью
+                              вывода текущих активов.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="artists-picture"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture5.jpg"
+                              alt="Картина 5"
+                            />
+                            <img
+                              class="artists-picture-mobile"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/picture5-mobile.jpg"
+                              alt="Картина 5"
+                            />
+                            <h3
+                              class="subject subject-mobile light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Винсент Ван Гог
+                            </h3>
+                            <p
+                              class="description description-artists light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Повседневная практика показывает, что разбавленное
+                              изрядной долей эмпатии, рациональное мышление
+                              требует анализа поставленных обществом задач.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="container" bgcolor="#ffffff">
+                <table cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="not-all" align="center">
+                      <h2
+                        class="heading gray"
+                        style="
+                          font-family: Arial, Geneva, Tahoma, sans-serif;
+                          padding-bottom: 11px;
+                        "
+                        align="left"
+                      >
+                        И&nbsp;это ещё не&nbsp;всё!
+                      </h2>
+                      <table
+                        class="table-not-all"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tr>
+                          <td
+                            class="not-all-comment not-all-comment1"
+                            valign="top"
+                          >
+                            <img
+                              class="not-all-image"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/check.png"
+                              alt="Декоративная картинка 1"
+                            />
+                            <p
+                              class="description description-comments gray"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Уникальные подборки работ с&nbsp;авторскими
+                              рецензиями
+                            </p>
+                          </td>
+                          <td
+                            class="not-all-comment not-all-comment2"
+                            valign="top"
+                          >
+                            <img
+                              class="not-all-image"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/calendar.png"
+                              alt="Декоративная картинка 2"
+                            />
+                            <p
+                              class="description description-comments gray"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              Возможность настроить нашу рассылку под свой
+                              личный вкус
+                            </p>
+                          </td>
+                          <td class="not-all-comment3" valign="top">
+                            <img
+                              class="not-all-image"
+                              src="https://comicbook-collection.ru/resources/html-emails-homework/arrow.png"
+                              alt="Декоративная картинка 3"
+                            />
+                            <p
+                              class="description description-comments gray"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                            >
+                              У&nbsp;вас есть пожелания и&nbsp;предложения?
+                              Напишите нам в&nbsp;ответ на&nbsp;это письмо!
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <table cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="button" align="center">
+                            <a
+                              class="button-link light"
+                              style="
+                                font-family: Arial, Geneva, Tahoma, sans-serif;
+                              "
+                              href=""
+                            >
+                              Узнать все подробности
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="container" bgcolor="#000000" align="center">
+                <table cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="social-copyright" align="center">
+                      <table cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="social-item">
+                            <a href="">
+                              <img
+                                src="https://comicbook-collection.ru/resources/html-emails-homework/vk.png"
+                                alt="VK"
+                              />
+                            </a>
+                          </td>
+                          <td class="social-item">
+                            <a href="">
+                              <img
+                                src="https://comicbook-collection.ru/resources/html-emails-homework/instagram.png"
+                                alt="instagram"
+                              />
+                            </a>
+                          </td>
+                          <td>
+                            <a href="">
+                              <img
+                                src="https://comicbook-collection.ru/resources/html-emails-homework/facebook.png"
+                                alt="facebook"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                      <p
+                        class="description description-copyright light-gray"
+                        style="font-family: Arial, Geneva, Tahoma, sans-serif"
+                      >
+                        Blanchard © 2020 / Все права защищены
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="container" bgcolor="#ffffff" align="center">
+                <p
+                  class="description description-mailing light-gray"
+                  style="font-family: Arial, Geneva, Tahoma, sans-serif"
+                >
+                  Вы можете так же<a class="pink" href="">
+                    отписаться от рассылки</a
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
