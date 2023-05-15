@@ -53,10 +53,6 @@
         width: 520px;
       }
 
-      .table-button {
-        width: 240px;
-      }
-
       .table-social {
         width: 143px;
       }
@@ -111,13 +107,10 @@
 
       .artists-pictures {
         display: block;
+        height: 180px;
       }
 
-      .artists-picture-mobile {
-        display: none;
-      }
-
-      .artist-pictures-margin {
+      .artists-pictures-margin {
         height: 21px;
       }
 
@@ -169,6 +162,14 @@
         height: 32px;
       }
 
+      .button-top {
+        height: 15.5px;
+      }
+
+      .button-bottom {
+        height: 15.5px;
+      }
+
       .social-copyright-top {
         height: 27px;
       }
@@ -185,9 +186,15 @@
         height: 8px;
       }
 
+      /*Адаптив картинок*/
+      .artists-picture-mobile {
+        display: none;
+      }
+
       /* Заголовки */
       .title {
         margin: 0;
+        padding: 0;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -196,6 +203,7 @@
 
       .heading {
         margin: 0;
+        padding: 0;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -204,6 +212,7 @@
 
       .subject {
         margin: 0;
+        padding: 0;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -213,6 +222,7 @@
       /* Текст */
       .description {
         margin: 0;
+        padding: 0;
         font-style: normal;
         font-weight: normal;
       }
@@ -245,20 +255,18 @@
       /* Ссылки */
       .button-link {
         margin: 0;
-        width: 240px;
+        padding: 0;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        line-height: 21px;
+        line-height: 14px;
         text-decoration: none;
       }
 
       /* Декорации */
       .button {
-        display: block;
-        padding-top: 13px;
-        padding-bottom: 12px;
-        background-color: #9d5cd0;
+        width: 240px;
+        border-radius: 48px;
       }
 
       .button-image-decoration {
@@ -282,6 +290,7 @@
       }
 
       @media (max-width: 599px) {
+        /* Контейнеры и отступы основных блоков */
         .table-adaptive {
           width: 280px !important;
         }
@@ -310,27 +319,11 @@
           width: 114px !important;
         }
 
-        .preview-image {
-          display: none !important;
-        }
-
-        .preview-image-mobile {
-          display: block !important;
-        }
-
         .preview-bottom {
           height: 32px !important;
         }
 
-        .artists-picture {
-          display: none !important;
-        }
-
-        .artists-picture-mobile {
-          display: block !important;
-        }
-
-        .artist-pictures-margin {
+        .artists-pictures-margin {
           height: 10px !important;
         }
 
@@ -375,59 +368,47 @@
           height: 11px !important;
         }
 
+        /*Адаптив картинок*/
+        .preview-image {
+          display: none !important;
+        }
+
+        .preview-image-mobile {
+          display: block !important;
+        }
+
+        .artists-picture {
+          display: none !important;
+        }
+
+        .artists-picture-mobile {
+          display: block !important;
+        }
+
+        /* Текст */
         .description-artists {
           width: 240px;
         }
       }
     </style>
   </head>
-
-  <body style="margin: 0; padding: 0">
-    <div
-      style="
-        font-size: 0px;
-        font-color: #ffffff;
-        opacity: 0;
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        display: none;
-      "
-    >
-      Тестовое письмо
+  <body style="margin: 0; padding: 0" bgcolor="#ffffff">
+    <div style="font-size: 0px;font-color: #ffffff;opacity: 0;visibility: hidden;width: 0;height: 0;display: none;">
+      Прикоснитесь к прекрасному
     </div>
-    <table
-      class="table-background"
-      cellpadding="0"
-      cellspacing="0"
-      bgcolor="#ededed"
-    >
+    <table class="table-background" cellpadding="0" cellspacing="0" bgcolor="#ededed">
       <tr>
         <td align="center">
-          <table
-            class="table-adaptive"
-            cellpadding="0"
-            cellspacing="0"
-            bgcolor="ffffff"
-          >
+          <table class="table-adaptive" cellpadding="0" cellspacing="0" bgcolor="ffffff">
             <tr>
               <td>
-                <table
-                  class="table-adaptive"
-                  cellpadding="0"
-                  cellspacing="0"
-                  bgcolor="#000000"
-                >
+                <table class="table-adaptive" cellpadding="0" cellspacing="0" bgcolor="#000000">
                   <tr>
                     <td class="logo-top"></td>
                   </tr>
                   <tr>
                     <td align="center">
-                      <img
-                        class="logo-image"
-                        src="https://renoirhamato.github.io/blanchard-emails/img/logo.png"
-                        alt="Логотип"
-                      />
+                      <img class="logo-image" src="https://renoirhamato.github.io/blanchard-emails/img/logo.png" alt="Логотип" />
                     </td>
                   </tr>
                   <tr>
@@ -438,43 +419,25 @@
             </tr>
             <tr>
               <td class="preview-image">
-                <img
-                  src="https://renoirhamato.github.io/blanchard-emails/img/preview.jpg"
-                  alt="Превью"
-                />
+                <img src="https://renoirhamato.github.io/blanchard-emails/img/preview.jpg" alt="Превью" />
               </td>
               <td class="preview-image-mobile">
-                <img
-                  src="https://renoirhamato.github.io/blanchard-emails/img/preview-mobile.jpg"
-                  alt="Превью"
-                />
+                <img src="https://renoirhamato.github.io/blanchard-emails/img/preview-mobile.jpg" alt="Превью" />
               </td>
             </tr>
             <tr>
               <td>
-                <table
-                  class="table-adaptive"
-                  cellpadding="0"
-                  cellspacing="0"
-                  bgcolor="#ffffff"
-                >
+                <table class="table-adaptive" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                   <tr>
                     <td class="container"></td>
                     <td>
-                      <table
-                        class="table-adaptive-content"
-                        cellpadding="0"
-                        cellspacing="0"
-                      >
+                      <table class="table-adaptive-content" cellpadding="0" cellspacing="0">
                         <tr>
                           <td class="preview-top"></td>
                         </tr>
                         <tr>
                           <td>
-                            <h1
-                              class="title gray"
-                              style="font-family: Arial, Geneva, sans-serif"
-                            >
+                            <h1 class="title gray" style="font-family: Arial, Geneva, sans-serif">
                               Торжество импрессионизма
                             </h1>
                           </td>
@@ -484,10 +447,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <p
-                              class="description description-preview gray"
-                              style="font-family: Arial, Geneva, sans-serif"
-                            >
+                            <p class="description description-preview gray" style="font-family: Arial, Geneva, sans-serif">
                               Опыт говорит нам, что семантический разбор внешних
                               противодействий требует анализа новых принципов
                               формирования материально-технической
@@ -500,10 +460,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <p
-                              class="description description-preview gray"
-                              style="font-family: Arial, Geneva, sans-serif"
-                            >
+                            <p class="description description-preview gray" style="font-family: Arial, Geneva, sans-serif">
                               Задача организации, в&nbsp;особенности&nbsp;же
                               внедрение современных методик, в&nbsp;своём
                               классическом представлении, допускает внедрение
@@ -528,32 +485,19 @@
                 </table>
               </td>
             </tr>
-
             <tr>
               <td>
-                <table
-                  class="table-adaptive"
-                  cellpadding="0"
-                  cellspacing="0"
-                  bgcolor="#000000"
-                >
+                <table class="table-adaptive" cellpadding="0" cellspacing="0" bgcolor="#000000">
                   <tr>
                     <td class="container"></td>
                     <td>
-                      <table
-                        class="table-adaptive-content"
-                        cellpadding="0"
-                        cellspacing="0"
-                      >
+                      <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                         <tr>
                           <td class="artists-top"></td>
                         </tr>
                         <tr>
                           <td>
-                            <h2
-                              class="heading light"
-                              style="font-family: Arial, Geneva, sans-serif"
-                            >
+                            <h2 class="heading light" style="font-family: Arial, Geneva, sans-serif">
                               Представленные художники
                             </h2>
                           </td>
@@ -563,54 +507,31 @@
                         </tr>
                         <tr>
                           <td>
-                            <table
-                              class="table-adaptive-content"
-                              cellpadding="0"
-                              cellspacing="0"
-                            >
+                            <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                               <tr>
                                 <td>
-                                  <table
-                                    class="table-adaptive-content"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <!-- artist 1 -->
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td>
-                                        <table
-                                          class="table-adaptive-content"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                        >
+                                        <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                           <tr>
                                             <td class="artists-picture">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture1.jpg"
-                                                alt="Картина 1"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture1.jpg" alt="Картина 1" />
                                             </td>
                                             <td class="artists-picture-mobile">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture1-mobile.jpg"
-                                                alt="Картина 1"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture1-mobile.jpg" alt="Картина 1" />
                                             </td>
                                           </tr>
                                         </table>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="artist-pictures-margin"></td>
+                                      <td class="artists-pictures-margin"></td>
                                     </tr>
                                     <tr>
                                       <td>
-                                        <h3
-                                          class="subject light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <h3 class="subject light" style="font-family: Arial, Geneva, sans-serif;">
                                           Поль Гоген
                                         </h3>
                                       </td>
@@ -620,13 +541,7 @@
                                     </tr>
                                     <tr>
                                       <td>
-                                        <p
-                                          class="description description-artists light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <p class="description description-artists light" style="font-family: Arial, Geneva, sans-serif;">
                                           Прежде всего, разбавленное изрядной
                                           долей эмпатии, рациональное мышление
                                           в&nbsp;значительной степени
@@ -640,56 +555,37 @@
                               </tr>
                               <tr>
                                 <td>
-                                  <table cellpadding="0" cellspacing="0">
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td class="artists-card-margin"></td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
+                              <!-- artist 2 -->
                               <tr>
                                 <td>
-                                  <table
-                                    class="table-adaptive-content"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td>
-                                        <table
-                                          class="table-adaptive-content"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                        >
+                                        <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                           <tr>
                                             <td class="artists-picture">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture2.jpg"
-                                                alt="Картина 2"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture2.jpg" alt="Картина 2" />
                                             </td>
                                             <td class="artists-picture-mobile">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture2-mobile.jpg"
-                                                alt="Картина 2"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture2-mobile.jpg" alt="Картина 2" />
                                             </td>
                                           </tr>
                                         </table>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="artist-pictures-margin"></td>
+                                      <td class="artists-pictures-margin"></td>
                                     </tr>
                                     <tr>
                                       <td>
-                                        <h3
-                                          class="subject light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <h3 class="subject light" style="font-family: Arial, Geneva, sans-serif;">
                                           Огюст Ренуар
                                         </h3>
                                       </td>
@@ -699,13 +595,7 @@
                                     </tr>
                                     <tr>
                                       <td>
-                                        <p
-                                          class="description description-artists light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <p class="description description-artists light" style="font-family: Arial, Geneva, sans-serif;">
                                           А&nbsp;также сделанные на&nbsp;базе
                                           интернет-аналитики выводы освещают
                                           чрезвычайно интересные особенности
@@ -718,56 +608,37 @@
                               </tr>
                               <tr>
                                 <td>
-                                  <table cellpadding="0" cellspacing="0">
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td class="artists-card-margin"></td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
+                              <!-- artist 3 -->
                               <tr>
                                 <td>
-                                  <table
-                                    class="table-adaptive-content"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td>
-                                        <table
-                                          class="table-adaptive-content"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                        >
+                                        <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                           <tr>
                                             <td class="artists-picture">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture3.jpg"
-                                                alt="Картина 3"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture3.jpg" alt="Картина 3" />
                                             </td>
                                             <td class="artists-picture-mobile">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture3-mobile.jpg"
-                                                alt="Картина 3"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture3-mobile.jpg" alt="Картина 3" />
                                             </td>
                                           </tr>
                                         </table>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="artist-pictures-margin"></td>
+                                      <td class="artists-pictures-margin"></td>
                                     </tr>
                                     <tr>
                                       <td>
-                                        <h3
-                                          class="subject light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <h3 class="subject light" style="font-family: Arial, Geneva, sans-serif;">
                                           Клод Моне
                                         </h3>
                                       </td>
@@ -777,13 +648,7 @@
                                     </tr>
                                     <tr>
                                       <td>
-                                        <p
-                                          class="description description-artists light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <p class="description description-artists light" style="font-family: Arial, Geneva, sans-serif;">
                                           Современная методология разработки
                                           однозначно фиксирует необходимость
                                           системы массового участия.
@@ -795,74 +660,47 @@
                               </tr>
                               <tr>
                                 <td>
-                                  <table cellpadding="0" cellspacing="0">
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td class="artists-card-margin"></td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
+                              <!-- artist 4 -->
                               <tr>
                                 <td>
-                                  <table
-                                    class="table-adaptive-content"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td>
-                                        <table
-                                          class="table-adaptive-content"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                        >
+                                        <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                           <tr>
                                             <td class="artists-picture">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture4.jpg"
-                                                alt="Картина 4"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture4.jpg" alt="Картина 4" />
                                             </td>
                                             <td class="artists-picture-mobile">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture4-mobile.jpg"
-                                                alt="Картина 4"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture4-mobile.jpg" alt="Картина 4" />
                                             </td>
                                           </tr>
                                         </table>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="artist-pictures-margin"></td>
+                                      <td class="artists-pictures-margin"></td>
                                     </tr>
                                     <tr>
                                       <td>
-                                        <h3
-                                          class="subject light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <h3 class="subject light" style="font-family: Arial, Geneva, sans-serif;">
                                           Эдуард Мане
                                         </h3>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td
-                                        class="artists-subject-margin artists-subject-adaptive-margin"
-                                      ></td>
+                                      <td class="artists-subject-margin artists-subject-adaptive-margin"></td>
                                     </tr>
                                     <tr>
                                       <td>
-                                        <p
-                                          class="description description-artists light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <p class="description description-artists light" style="font-family: Arial, Geneva, sans-serif;">
                                           Но&nbsp;социально-экономическое
                                           развитие является качественно новой
                                           ступенью вывода текущих активов.
@@ -874,74 +712,47 @@
                               </tr>
                               <tr>
                                 <td>
-                                  <table cellpadding="0" cellspacing="0">
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td class="artists-card-margin"></td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
+                              <!-- artist 5 -->
                               <tr>
                                 <td>
-                                  <table
-                                    class="table-adaptive-content"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                     <tr>
                                       <td>
-                                        <table
-                                          class="table-adaptive-content"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                        >
+                                        <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#000000">
                                           <tr>
                                             <td class="artists-picture">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture5.jpg"
-                                                alt="Картина 5"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture5.jpg" alt="Картина 5" />
                                             </td>
                                             <td class="artists-picture-mobile">
-                                              <img
-                                                src="https://renoirhamato.github.io/blanchard-emails/img/picture5-mobile.jpg"
-                                                alt="Картина 5"
-                                              />
+                                              <img src="https://renoirhamato.github.io/blanchard-emails/img/picture5-mobile.jpg" alt="Картина 5" />
                                             </td>
                                           </tr>
                                         </table>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="artist-pictures-margin"></td>
+                                      <td class="artists-pictures-margin"></td>
                                     </tr>
                                     <tr>
                                       <td>
-                                        <h3
-                                          class="subject light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <h3 class="subject light" style="font-family: Arial, Geneva, sans-serif;">
                                           Винсент Ван Гог
                                         </h3>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td
-                                        class="artists-subject-margin artists-subject-adaptive-margin"
-                                      ></td>
+                                      <td class="artists-subject-margin artists-subject-adaptive-margin"></td>
                                     </tr>
                                     <tr>
                                       <td>
-                                        <p
-                                          class="description description-artists light"
-                                          style="
-                                            font-family: Arial, Geneva, Tahoma,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <p class="description description-artists light" style="font-family: Arial, Geneva, Tahoma, sans-serif;">
                                           Повседневная практика показывает, что
                                           разбавленное изрядной долей эмпатии,
                                           рациональное мышление требует анализа
@@ -956,17 +767,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
-                            <table
-                              class="table-adaptive-content"
-                              cellpadding="0"
-                              cellspacing="0"
-                            >
-                              <tr>
-                                <td class="artists-bottom"></td>
-                              </tr>
-                            </table>
-                          </td>
+                          <td class="artists-bottom"></td>
                         </tr>
                       </table>
                     </td>
@@ -975,33 +776,19 @@
                 </table>
               </td>
             </tr>
-
             <tr>
               <td>
-                <table
-                  class="table-adaptive"
-                  cellpadding="0"
-                  cellspacing="0"
-                  bgcolor="#ffffff"
-                >
+                <table class="table-adaptive" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                   <tr>
                     <td class="container"></td>
                     <td>
-                      <table
-                        class="table-adaptive-content"
-                        cellpadding="0"
-                        cellspacing="0"
-                      >
+                      <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                         <tr>
                           <td class="not-all-top"></td>
                         </tr>
                         <tr>
                           <td>
-                            <h2
-                              class="heading gray"
-                              style="font-family: Arial, Geneva, sans-serif"
-                              align="left"
-                            >
+                            <h2 class="heading gray" style="font-family: Arial, Geneva, sans-serif">
                               И&nbsp;это ещё не&nbsp;всё!
                             </h2>
                           </td>
@@ -1011,25 +798,13 @@
                         </tr>
                         <tr>
                           <td>
-                            <table
-                              class="table-adaptive-content"
-                              cellpadding="0"
-                              cellspacing="0"
-                            >
+                            <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                               <tr>
                                 <td class="not-all-adaptive" valign="top">
-                                  <table
-                                    class="not-all-comment1"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <table class="not-all-comment1" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                                     <tr>
                                       <td>
-                                        <img
-                                          class="not-all-image"
-                                          src="https://renoirhamato.github.io/blanchard-emails/img/check.png"
-                                          alt="Декоративная картинка 1"
-                                        />
+                                        <img class="not-all-image" src="https://renoirhamato.github.io/blanchard-emails/img/check.png" alt="Декоративная картинка 1" />
                                       </td>
                                     </tr>
                                     <tr>
@@ -1037,13 +812,7 @@
                                     </tr>
                                     <tr>
                                       <td>
-                                        <p
-                                          class="description description-comments gray"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <p class="description description-comments gray" style="font-family: Arial, Geneva, sans-serif;">
                                           Уникальные подборки работ
                                           с&nbsp;авторскими рецензиями
                                         </p>
@@ -1051,22 +820,12 @@
                                     </tr>
                                   </table>
                                 </td>
-                                <td
-                                  class="not-all-adaptive not-all-comment-adaptive-margin not-all-comment1-margin"
-                                ></td>
+                                <td class="not-all-adaptive not-all-comment-adaptive-margin not-all-comment1-margin"></td>
                                 <td class="not-all-adaptive" valign="top">
-                                  <table
-                                    class="not-all-comment2"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <table class="not-all-comment2" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                                     <tr>
                                       <td>
-                                        <img
-                                          class="not-all-image"
-                                          src="https://renoirhamato.github.io/blanchard-emails/img/calendar.png"
-                                          alt="Декоративная картинка 2"
-                                        />
+                                        <img class="not-all-image" src="https://renoirhamato.github.io/blanchard-emails/img/calendar.png" alt="Декоративная картинка 2" />
                                       </td>
                                     </tr>
                                     <tr>
@@ -1074,13 +833,7 @@
                                     </tr>
                                     <tr>
                                       <td>
-                                        <p
-                                          class="description description-comments gray"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <p class="description description-comments gray" style="font-family: Arial, Geneva, sans-serif;">
                                           Возможность настроить нашу рассылку
                                           под свой личный вкус
                                         </p>
@@ -1088,22 +841,12 @@
                                     </tr>
                                   </table>
                                 </td>
-                                <td
-                                  class="not-all-adaptive not-all-comment-adaptive-margin not-all-comment2-margin"
-                                ></td>
+                                <td class="not-all-adaptive not-all-comment-adaptive-margin not-all-comment2-margin"></td>
                                 <td class="not-all-adaptive" valign="top">
-                                  <table
-                                    class="not-all-comment3"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <table class="not-all-comment3" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                                     <tr>
                                       <td>
-                                        <img
-                                          class="not-all-image"
-                                          src="https://renoirhamato.github.io/blanchard-emails/img/arrow.png"
-                                          alt="Декоративная картинка 3"
-                                        />
+                                        <img class="not-all-image" src="https://renoirhamato.github.io/blanchard-emails/img/arrow.png" alt="Декоративная картинка 3" />
                                       </td>
                                     </tr>
                                     <tr>
@@ -1111,13 +854,7 @@
                                     </tr>
                                     <tr>
                                       <td>
-                                        <p
-                                          class="description description-comments gray"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                        >
+                                        <p class="description description-comments gray" style="font-family: Arial, Geneva, sans-serif;">
                                           У&nbsp;вас есть пожелания
                                           и&nbsp;предложения? Напишите нам
                                           в&nbsp;ответ на&nbsp;это письмо!
@@ -1126,9 +863,7 @@
                                     </tr>
                                   </table>
                                 </td>
-                                <td
-                                  class="not-all-adaptive not-all-comment3-margin"
-                                ></td>
+                                <td class="not-all-adaptive not-all-comment3-margin"></td>
                               </tr>
                             </table>
                           </td>
@@ -1138,33 +873,22 @@
                         </tr>
                         <tr>
                           <td>
-                            <table
-                              class="table-adaptive-content"
-                              cellpadding="0"
-                              cellspacing="0"
-                            >
+                            <table class="table-adaptive-content" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                               <tr>
                                 <td align="center">
-                                  <table
-                                    class="table-button"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                  >
+                                  <table class="button" cellpadding="0" cellspacing="0" bgcolor="#9d5cd0">
                                     <tr>
-                                      <td class="button-image-decoration"></td>
-                                      <td class="button" align="center">
-                                        <a
-                                          class="button-link light"
-                                          style="
-                                            font-family: Arial, Geneva,
-                                              sans-serif;
-                                          "
-                                          href="https://blanchard.comicbook-collection.ru/"
-                                        >
+                                      <td class="button-top"></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center">
+                                        <a class="button-link light" style="font-family: Arial, Geneva, sans-serif;" href="https://blanchard.comicbook-collection.ru/">
                                           Узнать все подробности
                                         </a>
                                       </td>
-                                      <td class="button-image-decoration"></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="button-bottom"></td>
                                     </tr>
                                   </table>
                                 </td>
@@ -1182,112 +906,60 @@
                 </table>
               </td>
             </tr>
-
             <tr>
               <td>
-                <table
-                  class="table-adaptive"
-                  cellpadding="0"
-                  cellspacing="0"
-                  bgcolor="#000000"
-                >
+                <table class="table-adaptive" cellpadding="0" cellspacing="0" bgcolor="#000000">
                   <tr>
-                    <td class="container"></td>
-                    <td>
-                      <table
-                        class="table-adaptive-content"
-                        cellpadding="0"
-                        cellspacing="0"
-                      >
+                    <td class="social-copyright-top"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <table class="table-social" cellpadding="0" cellspacing="0" bgcolor="#000000">
                         <tr>
-                          <td class="social-copyright-top"></td>
-                        </tr>
-                        <tr>
-                          <td align="center">
-                            <table
-                              class="table-social"
-                              cellpadding="0"
-                              cellspacing="0"
-                            >
-                              <tr>
-                                <td class="social-item">
-                                  <a
-                                    href="https://renoirhamato.github.io/blanchard-emails/img/vk.png"
-                                  >
-                                    <img
-                                      src="https://renoirhamato.github.io/blanchard-emails/img/vk.png"
-                                      alt="VK"
-                                    />
-                                  </a>
-                                </td>
-                                <td class="social-item-margin"></td>
-                                <td class="social-item">
-                                  <a
-                                    href="https://renoirhamato.github.io/blanchard-emails/img/instagram.png"
-                                  >
-                                    <img
-                                      src="https://renoirhamato.github.io/blanchard-emails/img/instagram.png"
-                                      alt="instagram"
-                                    />
-                                  </a>
-                                </td>
-                                <td class="social-item-margin"></td>
-                                <td>
-                                  <a
-                                    href="https://renoirhamato.github.io/blanchard-emails/img/facebook.png"
-                                  >
-                                    <img
-                                      src="https://renoirhamato.github.io/blanchard-emails/img/facebook.png"
-                                      alt="facebook"
-                                    />
-                                  </a>
-                                </td>
-                              </tr>
-                            </table>
+                          <td class="social-item">
+                            <a href="https://renoirhamato.github.io/blanchard-emails/img/vk.png">
+                              <img src="https://renoirhamato.github.io/blanchard-emails/img/vk.png" alt="VK" />
+                            </a>
                           </td>
-                        </tr>
-                        <tr>
-                          <td class="social-margin"></td>
-                        </tr>
-                        <tr>
-                          <td align="center">
-                            <p
-                              class="description description-copyright light-gray"
-                              style="
-                                font-family: Arial, Geneva, Tahoma, sans-serif;
-                              "
-                            >
-                              Blanchard © 2020 / Все права защищены
-                            </p>
+                          <td class="social-item-margin"></td>
+                          <td class="social-item">
+                            <a href="https://renoirhamato.github.io/blanchard-emails/img/instagram.png">
+                              <img src="https://renoirhamato.github.io/blanchard-emails/img/instagram.png" alt="instagram" />
+                            </a>
                           </td>
-                        </tr>
-                        <tr>
-                          <td class="social-copyright-bottom"></td>
+                          <td class="social-item-margin"></td>
+                          <td>
+                            <a href="https://renoirhamato.github.io/blanchard-emails/img/facebook.png">
+                              <img src="https://renoirhamato.github.io/blanchard-emails/img/facebook.png" alt="facebook" />
+                            </a>
+                          </td>
                         </tr>
                       </table>
                     </td>
+                  </tr>
+                  <tr>
+                    <td class="social-margin"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p class="description description-copyright light-gray" style="font-family: Arial, Geneva, sans-serif">
+                        Blanchard © 2020 / Все права защищены
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="social-copyright-bottom"></td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
               <td>
-                <table
-                  class="table-adaptive"
-                  cellpadding="0"
-                  cellspacing="0"
-                  bgcolor="#ffffff"
-                >
+                <table class="table-adaptive" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
                   <tr>
                     <td align="center">
-                      <p
-                        class="description description-mailing light-gray"
-                        style="font-family: Arial, Geneva, sans-serif"
-                      >
-                        Вы можете так же
-                        <a class="pink" href="https://github.com/RenoirHamato"
-                          >&nbsp;отписаться от рассылки</a
-                        >
+                      <p class="description description-mailing light-gray" style="font-family: Arial, Geneva, sans-serif">
+                        Вы можете так же<a class="pink" href="https://github.com/RenoirHamato">&nbsp;отписаться от рассылки</a>
                       </p>
                     </td>
                   </tr>
